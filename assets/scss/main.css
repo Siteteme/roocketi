@@ -1,0 +1,248 @@
+@font-face {
+  font-family: yekanBakh4;
+  font-weight: 400;
+  src: url("/assets/fonts/yekan-bakh/Yekan-Bakh-FaNum-04-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: yekanBakh5;
+  font-weight: 500;
+  src: url("/assets/fonts/yekan-bakh/Yekan-Bakh-FaNum-05-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: yekanBakh7;
+  font-weight: 700;
+  src: url("/assets/fonts/yekan-bakh/Yekan-Bakh-FaNum-06-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: yekanBakh8;
+  font-weight: 800;
+  src: url("/assets/fonts/yekan-bakh/Yekan-Bakh-FaNum-07-Heavy.woff") format("woff");
+}
+@font-face {
+  font-family: yekanBakh9;
+  font-weight: 900;
+  src: url("/assets/fonts/yekan-bakh/Yekan-Bakh-FaNum-08-Fat.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1366px;
+  margin: 0 auto;
+}
+
+body {
+  background: #F1F2F4;
+  font-family: yekanBakh4;
+}
+
+/*HEADER*/
+header {
+  display: flex;
+  margin: 0 43px;
+}
+header .navbar {
+  position: relative;
+  margin-top: -40px;
+  background: #D0D4DC;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  margin-left: 35px;
+  margin-right: 35px;
+  border-radius: 25px;
+}
+header .navbar nav {
+  margin-top: 43px;
+}
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+header .navbar ul li {
+  list-style: none;
+  margin: 0 20px;
+  font-size: 16px;
+  font-family: "yekanBakh4";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+header .navbar ul li .chevron01 img {
+  transition: all 0.4s ease;
+}
+header .navbar ul .sub-nav-items {
+  display: none;
+  width: 400px;
+  height: 256px;
+  background: #fff;
+  position: absolute;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.03);
+  right: -30px;
+  top: 55px;
+  border-radius: 11px;
+  padding: 20px;
+  gap: 10px;
+  grid-template-columns: auto auto;
+}
+header .navbar ul .sub-nav-items .sub-nav-item {
+  display: flex;
+  padding: 8px;
+  border-radius: 8px;
+}
+header .navbar ul .sub-nav-items .sub-nav-item:hover {
+  background: #ECEEEF;
+}
+header .navbar ul .sub-nav-items .sub-nav-item .sub-nav-item-desc {
+  margin: 0 5px;
+}
+header .navbar ul .sub-nav-items .sub-nav-item .sub-nav-item-desc h2 {
+  font-size: 18px;
+  font-family: yekanBakh8;
+  color: #64748b;
+}
+header .navbar ul .sub-nav-items .sub-nav-item .sub-nav-item-desc p {
+  font-size: 14px;
+  font-family: yekanBakh7;
+  color: #95a0b1;
+}
+header .navbar ul span {
+  margin-right: 7px;
+  margin-top: -10px;
+  cursor: pointer;
+  height: 10px;
+}
+header .navbar ul span:hover {
+  color: #7A8A9F;
+}
+header .navbar ul a {
+  text-decoration: none;
+  color: #334155;
+  transition: all 0.4s ease;
+}
+header .navbar ul a:hover {
+  color: #7A8A9F;
+}
+
+.header {
+  position: relative;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  padding: 0 44px;
+  border-radius: 15px;
+  margin-top: 32px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.03);
+  z-index: 2;
+}
+.header .menu-hamburger {
+  display: none;
+  margin-top: 13px;
+}
+.header .logo img {
+  max-width: 210px;
+  margin-top: 19px;
+  transition: all 0.4s ease;
+}
+.header .searchbox {
+  background: #ECEEEF;
+  width: 600px;
+  height: 48px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+.header .searchbox input {
+  border: none;
+  background: #ECEEEF;
+  position: relative;
+  max-width: 581px;
+  outline: none;
+  padding: 0 25px;
+  cursor: text;
+  width: 100%;
+  height: 100%;
+  font-family: "yekanBakh4";
+}
+.header .searchbox input::placeholder {
+  font-size: 12px;
+}
+.header .searchbox img {
+  position: absolute;
+  right: 10px;
+  width: 17px;
+}
+.header .header-left {
+  display: flex;
+  align-items: center;
+}
+.header .header-left .registration {
+  display: flex;
+}
+.header .header-left .light-dark {
+  margin-left: 15px;
+  border-radius: 50%;
+  margin-left: 15px;
+  background: #eceeef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49px;
+  height: 49px;
+}
+.header .header-left .light-dark:hover {
+  background: #4a5a70;
+}
+.header .header-left .login {
+  background: #EBF2FE;
+  color: #3B82F6;
+  margin-left: -8px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  font-family: yekanBakh7;
+  font-size: 16px;
+}
+.header .header-left .login:hover {
+  background: #80aef8;
+  color: #fff;
+}
+.header .header-left .register {
+  background: #3B82F6;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-family: yekanBakh7;
+  font-size: 16px;
+}
+.header .header-left .register:hover {
+  background: #80aef8;
+  color: #fff;
+}
+.header .header-left button {
+  outline: none;
+  border: none;
+  transition: all 0.2s ease;
+}
+.header .header-left span {
+  display: flex;
+  margin-left: 5px;
+}
+
+/*# sourceMappingURL=main.css.map */

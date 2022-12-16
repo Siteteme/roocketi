@@ -1,0 +1,43 @@
+@media  screen and  (max-width: 1270px){
+    .header .searchbox{
+        width: 530px !important;
+    }
+}
+
+
+@media  screen and  (max-width: 1200px){
+    .header .searchbox{
+        width: 400px !important;
+    }
+}
+
+
+@media  screen and  (max-width: 992px){
+
+}
+
+@media  screen and  (max-width: 768px){
+    .header .logo img{
+        max-width: 180px;
+    }
+}
+
+
+
+@media  screen and  (max-width: 1024px){
+    .header .searchbox{
+    display: none
+}
+
+    .header .header-left .light-dark{
+        display: none;
+    }
+
+    header .navbar{
+        display: none;
+    }
+
+    header .menu-hamburger{
+        display: block !important;
+    }
+}
