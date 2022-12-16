@@ -27,7 +27,7 @@ header{
         list-style: none;
         margin: 0 20px;
         font-size: 16px;
-        font-family: 'yekanBakh4';
+        font-family: 'yekanBakh5';
         display: flex;
         align-items: center;
         justify-content: center;
@@ -56,7 +56,7 @@ header{
           padding: 8px;
           border-radius: 8px;
           &:hover{
-            background: $graySecondary;
+            background: $colorBody;
           }
           .sub-nav-item-desc{
             margin: 0 5px;
@@ -179,12 +179,13 @@ header{
       background: $blueSecondary;
       color: $bluePrimary;
       margin-left: -8px;
-      padding: 10px 20px;
+      padding: 0 8px;
       display: flex;
       align-items: center;
       border-radius: 8px;
       font-family: yekanBakh7;
       font-size: 16px;
+      height: 39px;
       &:hover {
         background: #80aef8;
         color: $white;
@@ -195,10 +196,11 @@ header{
       color: $white;
       display: flex;
       align-items: center;
-      padding: 8px 15px;
+      padding: 0 8px;
       border-radius: 8px;
       font-family: yekanBakh7;
       font-size: 16px;
+      height: 39px;
 
       &:hover {
         background: #80aef8;

@@ -30,7 +30,7 @@
 }
 
 .container {
-  width: 1366px;
+  width: 1258px;
   margin: 0 auto;
 }
 
@@ -70,14 +70,14 @@ header .navbar ul li {
   list-style: none;
   margin: 0 20px;
   font-size: 16px;
-  font-family: "yekanBakh4";
+  font-family: "yekanBakh5";
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 header .navbar ul li .chevron01 img {
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
 }
 header .navbar ul .sub-nav-items {
   display: none;
@@ -99,7 +99,7 @@ header .navbar ul .sub-nav-items .sub-nav-item {
   border-radius: 8px;
 }
 header .navbar ul .sub-nav-items .sub-nav-item:hover {
-  background: #ECEEEF;
+  background: #F1F2F4;
 }
 header .navbar ul .sub-nav-items .sub-nav-item .sub-nav-item-desc {
   margin: 0 5px;
@@ -126,7 +126,7 @@ header .navbar ul span:hover {
 header .navbar ul a {
   text-decoration: none;
   color: #334155;
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
 }
 header .navbar ul a:hover {
   color: #7A8A9F;
@@ -152,7 +152,7 @@ header .navbar ul a:hover {
 .header .logo img {
   max-width: 210px;
   margin-top: 19px;
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
 }
 .header .searchbox {
   background: #ECEEEF;
@@ -163,7 +163,7 @@ header .navbar ul a:hover {
   align-items: center;
   padding: 0 15px;
   border-radius: 10px;
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
 }
 .header .searchbox input {
   border: none;
@@ -210,12 +210,13 @@ header .navbar ul a:hover {
   background: #EBF2FE;
   color: #3B82F6;
   margin-left: -8px;
-  padding: 10px 20px;
+  padding: 0 8px;
   display: flex;
   align-items: center;
   border-radius: 8px;
   font-family: yekanBakh7;
   font-size: 16px;
+  height: 39px;
 }
 .header .header-left .login:hover {
   background: #80aef8;
@@ -226,10 +227,11 @@ header .navbar ul a:hover {
   color: #fff;
   display: flex;
   align-items: center;
-  padding: 8px 15px;
+  padding: 0 8px;
   border-radius: 8px;
   font-family: yekanBakh7;
   font-size: 16px;
+  height: 39px;
 }
 .header .header-left .register:hover {
   background: #80aef8;
@@ -243,6 +245,78 @@ header .navbar ul a:hover {
 .header .header-left span {
   display: flex;
   margin-left: 5px;
+}
+
+#intro {
+  display: flex;
+  margin: 0 43px;
+}
+
+.intro {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+}
+.intro .intro-right {
+  width: 50%;
+}
+.intro .intro-right h1 {
+  font-size: 60px;
+  color: #334155;
+  font-family: "yekanBakh9";
+  margin-bottom: 25px;
+  width: 88%;
+}
+.intro .intro-right p {
+  font-size: 24px;
+  font-family: "yekanBakh5";
+  color: #7A8A9F;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+.intro .intro-right button {
+  display: flex;
+  align-items: center;
+  width: 273px;
+  height: 65px;
+  justify-content: center;
+  border: none;
+  background: #3B82F6;
+  font-size: 20px;
+  font-family: "yekanBakh5";
+  border-radius: 8px;
+  color: #fff;
+  margin-bottom: 40px;
+  transition: all 0.2s ease;
+}
+.intro .intro-right button img {
+  margin-right: 5px;
+}
+.intro .intro-right button:hover {
+  background: rgb(55, 65, 81);
+}
+.intro .intro-right .intro-right-items {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+.intro .intro-right .intro-right-items .intro-right-item {
+  display: flex;
+}
+.intro .intro-right .intro-right-items .intro-right-item img {
+  margin-left: 15px;
+}
+.intro .intro-right .intro-right-items .intro-right-item h2 {
+  color: #334155;
+  font-size: 22px;
+}
+.intro .intro-left {
+  width: 50%;
+}
+.intro .intro-left img {
+  margin-top: 35px;
+  max-width: 90%;
+  float: left;
 }
 
 /*# sourceMappingURL=main.css.map */

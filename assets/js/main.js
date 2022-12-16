@@ -4,6 +4,12 @@ let subMenu = document.querySelectorAll('.sub-nav-items')
 
 
 
+chevron.forEach(item=>{
+    item.addEventListener("click",showSubMenu)
+})
+
+
+
 function showSubMenu() {
     subMenu.forEach(item=>{
         if (item.style.display === "none"){
@@ -24,9 +30,3 @@ function showSubMenu() {
     })
 
 }
-
-chevron.forEach(item=>{
-    item.addEventListener("click",showSubMenu)
-})
-
-

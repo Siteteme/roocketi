@@ -1,3 +1,30 @@
+@media  screen and  (max-width: 1280px){
+    .intro{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro .intro-right{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro .intro-right .intro-right-items {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        width: 78%;
+
+        justify-items: center;
+    }
+
+
+}
+
+
 @media  screen and  (max-width: 1270px){
     .header .searchbox{
         width: 530px !important;

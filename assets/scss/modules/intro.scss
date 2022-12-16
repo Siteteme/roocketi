@@ -1,0 +1,83 @@
+#intro {
+  display: flex;
+  margin: 0 43px;
+}
+
+.intro {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+
+  .intro-right {
+    width: 50%;
+
+    h1 {
+      font-size: 60px;
+      color: $title;
+      font-family: 'yekanBakh9';
+      margin-bottom: 25px;
+      width: 88%;
+    }
+
+    p {
+      font-size: 24px;
+      font-family: 'yekanBakh5';
+      color: $subTitle;
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      width: 273px;
+      height: 65px;
+      justify-content: center;
+      border: none;
+      background: $bluePrimary;
+      font-size: 20px;
+      font-family: 'yekanBakh5';
+      border-radius: 8px;
+      color: #fff;
+      margin-bottom: 40px;
+      transition: $transition;
+
+      img {
+        margin-right: 5px;
+      }
+
+      &:hover {
+        background: rgb(55 65 81);;
+      }
+    }
+
+    .intro-right-items {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 20px;
+
+      .intro-right-item {
+        display: flex;
+
+        img {
+          margin-left: 15px;
+        }
+
+        h2 {
+          color: $title;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .intro-left {
+    width: 50%;
+
+    img {
+      margin-top: 35px;
+      max-width: 90%;
+      float: left;
+    }
+  }
+}
