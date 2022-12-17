@@ -1,9 +1,10 @@
 /*HEADER*/
 
-header{
+header {
   display: flex;
   margin: 0 43px;
-  .navbar{
+
+  .navbar {
     position: relative;
     margin-top: -40px;
     background: $grayPrimary;
@@ -15,15 +16,18 @@ header{
     margin-left: 35px;
     margin-right: 35px;
     border-radius: 25px;
-    nav{
+
+    nav {
       margin-top: 43px;
     }
-    ul{
+
+    ul {
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
-      li{
+
+      li {
         list-style: none;
         margin: 0 20px;
         font-size: 16px;
@@ -32,12 +36,13 @@ header{
         align-items: center;
         justify-content: center;
         position: relative;
-        .chevron01 img{
+
+        .chevron01 img {
           transition: $transition;
         }
-    }
+      }
 
-      .sub-nav-items{
+      .sub-nav-items {
         display: none;
         width: 400px;
         height: 256px;
@@ -51,49 +56,158 @@ header{
         //display: grid;
         gap: 10px;
         grid-template-columns: auto auto;
-        .sub-nav-item{
-        display: flex;
+
+        .sub-nav-item {
+          display: flex;
           padding: 8px;
           border-radius: 8px;
-          &:hover{
+
+          &:hover {
             background: $colorBody;
           }
-          .sub-nav-item-desc{
+
+          .sub-nav-item-desc {
             margin: 0 5px;
           }
-          .sub-nav-item-desc h2{
+
+          .sub-nav-item-desc h2 {
             font-size: 18px;
             font-family: yekanBakh8;
-            color:#64748b;
+            color: #64748b;
           }
-          .sub-nav-item-desc p{
+
+          .sub-nav-item-desc p {
             font-size: 14px;
             font-family: yekanBakh7;
             color: #95a0b1;
           }
         }
       }
-      span{
+
+      span {
         margin-right: 7px;
         margin-top: -10px;
         cursor: pointer;
         height: 10px;
-        &:hover{
+
+        &:hover {
           color: $subTitle;
         }
       }
 
 
-      a{
+      a {
         text-decoration: none;
         color: $title;
         transition: $transition;
-        &:hover{
+
+        &:hover {
           color: $subTitle;
         }
       }
     }
   }
+
+  .navbar-sidebar {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: -50%;
+    width: 50%;
+    z-index: 100;
+    bottom: 0;
+    padding: 40px 20px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+
+    transition: $transition;
+
+    .close-navbar {
+      position: relative;
+      width: 25px;
+      img{
+        max-width: 100%;
+        position: absolute;
+        top: 8px;
+        object-fit: cover;
+        left: -300px;
+      }
+    }
+
+    .logo {
+      img {
+        max-width: 210px;
+        margin-bottom: 19px;
+        transition: $transition;
+      }
+    }
+
+    .searchbox {
+      background: $graySecondary;
+      width: 326px;
+      height: 48px;
+      position: relative;
+      display: inline-flex;
+      align-items: flex-start;
+      padding: 15px 15px;
+      border-radius: 10px;
+      transition: $transition;
+
+      input {
+        border: none;
+        background: $graySecondary;
+        position: relative;
+        max-width: 581px;
+        outline: none;
+        padding: 0 25px;
+        cursor: text;
+        width: 100%;
+        height: 100%;
+        font-family: 'yekanBakh4';
+      }
+    }
+
+    nav {
+      margin-top: 43px;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+        text-align: right;
+
+        li {
+          list-style: none;
+          margin: 5px 0;
+          font-size: 20px;
+          font-family: 'yekanBakh5';
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          background: $graySecondary;
+          padding: 10px 18px;
+          border-radius: 8px;
+          width: 230px;
+          &:hover{
+            background: $blueSecondary;
+          }
+
+          span{
+            margin: 0 6px;
+          };
+          a {
+            text-decoration: none;
+            color: $title;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 
@@ -109,10 +223,12 @@ header{
   margin-top: 32px;
   box-shadow: 0 0 20px 0 rgb(0 0 0 / 3%);
   z-index: 2;
-  .menu-hamburger{
+
+  .menu-hamburger {
     display: none;
     margin-top: 13px;
   }
+
   .logo {
     img {
       max-width: 210px;
@@ -131,6 +247,7 @@ header{
     padding: 0 15px;
     border-radius: 10px;
     transition: $transition;
+
     input {
       border: none;
       background: $graySecondary;
@@ -143,9 +260,11 @@ header{
       height: 100%;
       font-family: 'yekanBakh4';
     }
+
     input::placeholder {
       font-size: 12px;
     }
+
     img {
       position: absolute;
       right: 10px;
@@ -156,6 +275,7 @@ header{
   .header-left {
     display: flex;
     align-items: center;
+
     .registration {
       display: flex;
     }
@@ -163,13 +283,13 @@ header{
     .light-dark {
       margin-left: 15px;
       border-radius: 50%;
-      margin-left: 15px;
       background: #eceeef;
       display: flex;
       align-items: center;
       justify-content: center;
       width: 49px;
       height: 49px;
+
       &:hover {
         background: #4a5a70;
       }
@@ -186,11 +306,13 @@ header{
       font-family: yekanBakh7;
       font-size: 16px;
       height: 39px;
+
       &:hover {
         background: #80aef8;
         color: $white;
       }
     }
+
     .register {
       background: $bluePrimary;
       color: $white;
@@ -207,6 +329,7 @@ header{
         color: $white;
       }
     }
+
     button {
       outline: none;
       border: none;
@@ -218,4 +341,6 @@ header{
       margin-left: 5px;
     }
   }
+
+
 }

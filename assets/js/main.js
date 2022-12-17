@@ -2,13 +2,9 @@ let chevron = document.querySelectorAll('.chevron01');
 let chevron01 = document.querySelectorAll('.chevron01 img');
 let subMenu = document.querySelectorAll('.sub-nav-items')
 
-
-
 chevron.forEach(item=>{
     item.addEventListener("click",showSubMenu)
 })
-
-
 
 function showSubMenu() {
     subMenu.forEach(item=>{
@@ -29,4 +25,29 @@ function showSubMenu() {
         }
     })
 
+}
+
+
+//navbar-sidebar
+
+let navbarSidebar = document.querySelectorAll('.navbar-sidebar');
+let menuHamburger = document.querySelectorAll('.menu-hamburger');
+let closeNavbar =document.querySelectorAll('.close-navbar');
+menuHamburger.forEach(item=>{
+    item.addEventListener("click",showSubMenuSidebar)
+})
+closeNavbar.forEach(item=>{
+    item.addEventListener("click",closeSubMenuSidebar)
+})
+
+function showSubMenuSidebar() {
+    navbarSidebar.forEach(item=>{
+        item.style.right = 0;
+    })
+}
+
+function closeSubMenuSidebar() {
+    navbarSidebar.forEach(item=>{
+        item.style.right = '-50%';
+    })
 }
