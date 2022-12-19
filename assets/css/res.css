@@ -29,6 +29,21 @@
     .header .searchbox {
         width: 530px !important;
     }
+    #latest-courses .latest-courses-items{
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 66px;
+        grid-template-rows: auto auto;
+
+    }
+    #latest-courses .latest-courses .latest-courses-title .latest-courses-title-bold h2{
+        font-size:35px;
+    }
+    #latest-courses .latest-courses .latest-courses-title .latest-courses-title-more a{
+        font-size:19px;
+    }
+    #latest-courses .latest-courses-items .latest-courses-item h3{
+        height: 52px;
+    }
 }
 
 
@@ -91,6 +106,13 @@
     .intro .intro-right p {
         font-size: 16px;
         text-align: center;
+    }
+
+    #latest-courses .latest-courses-items{
+        grid-template-columns: auto auto;
+        grid-row-gap: 66px;
+        grid-template-rows: auto auto;
+
     }
 }
 

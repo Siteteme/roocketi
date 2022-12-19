@@ -346,6 +346,8 @@ header .navbar-sidebar nav ul li a {
 }
 .intro .intro-right {
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 .intro .intro-right h1 {
   font-size: 60px;
@@ -398,6 +400,11 @@ header .navbar-sidebar nav ul li a {
   color: #334155;
   font-size: 22px;
 }
+.intro .intro-right .arrow-down {
+  position: relative;
+  top: 50px;
+  align-self: flex-end;
+}
 .intro .intro-left {
   width: 50%;
 }
@@ -405,6 +412,144 @@ header .navbar-sidebar nav ul li a {
   margin-top: 35px;
   max-width: 90%;
   float: left;
+}
+
+#latest-courses {
+  display: flex;
+  margin: 80px 45px;
+}
+#latest-courses .latest-courses {
+  display: flex;
+  flex-direction: column;
+}
+#latest-courses .latest-courses .latest-courses-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+#latest-courses .latest-courses .latest-courses-title .latest-courses-title-bold {
+  display: flex;
+  align-items: center;
+}
+#latest-courses .latest-courses .latest-courses-title .latest-courses-title-bold h2 {
+  font-size: 40px;
+  color: #334155;
+  margin-right: 8px;
+  font-family: "yekanBakh9";
+  transition: all 0.2s ease;
+}
+#latest-courses .latest-courses .latest-courses-title .latest-courses-title-more {
+  display: flex;
+  align-items: center;
+}
+#latest-courses .latest-courses .latest-courses-title .latest-courses-title-more a {
+  font-size: 22px;
+  color: #7A8A9F;
+  font-family: "yekanBakh4";
+  margin: 0 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+#latest-courses .latest-courses-items {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 15px;
+}
+#latest-courses .latest-courses-items .latest-courses-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#latest-courses .latest-courses-items .latest-courses-item:hover > img {
+  transform: translateY(-3px);
+}
+#latest-courses .latest-courses-items .latest-courses-item img {
+  width: 100%;
+  margin-top: -50px;
+  border-radius: 8px;
+  align-self: center;
+  margin-bottom: 10px;
+  overflow: hidden;
+  object-fit: cover;
+  transition: all 0.2s ease;
+}
+#latest-courses .latest-courses-items .latest-courses-item span {
+  font-size: 12px;
+  color: #3B82F6;
+  font-family: "yekanBakh7";
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+#latest-courses .latest-courses-items .latest-courses-item span:before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #3B82F6;
+  position: absolute;
+  border-radius: 100%;
+  top: 6px;
+  right: -8px;
+}
+#latest-courses .latest-courses-items .latest-courses-item h3 {
+  font-size: 20px;
+  font-family: "yekanBakh8";
+  color: #334155;
+  margin: 5px 0;
+}
+#latest-courses .latest-courses-items .latest-courses-item p {
+  font-size: 14px;
+  color: #7A8A9F;
+  line-height: 24px;
+  margin: 5px 0;
+  font-family: "yekanBakh4";
+}
+#latest-courses .latest-courses-items .latest-courses-item hr {
+  background: #f3f1f1;
+  height: 1px;
+  width: 100%;
+  border: none;
+  margin: 9px 0;
+}
+#latest-courses .latest-courses-items .latest-courses-item div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+#latest-courses .latest-courses-items .latest-courses-item div img {
+  width: 25px;
+  margin: 0;
+}
+#latest-courses .latest-courses-items .latest-courses-item div a {
+  text-decoration: none;
+  color: #4e5968;
+  font-size: 13px;
+  font-family: "yekanBakh7";
+  margin: 0 5px;
+}
+#latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  line-height: 18px;
+}
+#latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-more img {
+  width: 22px;
+  margin: 0 8px;
+}
+#latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-more a {
+  text-decoration: none;
+  color: #3B82F6;
+  font-family: "yekanBakh5";
+}
+#latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-more a:hover {
+  color: #EBF2FE;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -10,6 +10,9 @@
 
   .intro-right {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+
 
     h1 {
       font-size: 60px;
@@ -52,6 +55,7 @@
       }
     }
 
+
     .intro-right-items {
       display: grid;
       grid-template-columns: auto auto;
@@ -69,6 +73,12 @@
           font-size: 22px;
         }
       }
+    }
+
+    .arrow-down{
+      position: relative;
+      top: 50px;
+      align-self: flex-end;
     }
   }
 
