@@ -135,8 +135,8 @@ header .navbar-sidebar {
   background: #fff;
   position: fixed;
   top: 0;
-  right: -50%;
-  width: 50%;
+  right: -100%;
+  max-width: 100%;
   z-index: 100;
   bottom: 0;
   padding: 40px 20px;
@@ -153,7 +153,8 @@ header .navbar-sidebar .close-navbar img {
   max-width: 100%;
   position: absolute;
   top: 8px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   left: -300px;
 }
 header .navbar-sidebar .logo img {
@@ -264,6 +265,12 @@ header .navbar-sidebar nav ul li a {
   width: 100%;
   height: 100%;
   font-family: "yekanBakh4";
+}
+.header .searchbox input::-moz-placeholder {
+  font-size: 12px;
+}
+.header .searchbox input:-ms-input-placeholder {
+  font-size: 12px;
 }
 .header .searchbox input::placeholder {
   font-size: 12px;
@@ -474,7 +481,8 @@ header .navbar-sidebar nav ul li a {
   align-self: center;
   margin-bottom: 10px;
   overflow: hidden;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: all 0.2s ease;
 }
 #latest-courses .latest-courses-items .latest-courses-item span {
@@ -547,9 +555,8 @@ header .navbar-sidebar nav ul li a {
   text-decoration: none;
   color: #3B82F6;
   font-family: "yekanBakh5";
+  transition: all 0.2s ease;
 }
 #latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-more a:hover {
-  color: #EBF2FE;
-}
-
-/*# sourceMappingURL=main.css.map */
+  color: #334155 !important;
+}/*# sourceMappingURL=main.css.map */

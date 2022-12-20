@@ -67,9 +67,7 @@
         overflow: hidden;
         object-fit: cover;
         transition: $transition;
-
       }
-
 
       span {
         font-size: 12px;
@@ -104,7 +102,6 @@
         line-height: 24px;
         margin: 5px 0;
         font-family: "yekanBakh4";
-
       }
 
       hr {
@@ -151,9 +148,10 @@
           text-decoration: none;
           color: $bluePrimary;
           font-family: "yekanBakh5";
+          transition: $transition;
 
           &:hover {
-            color: $blueSecondary;
+            color: $title !important;
           }
         }
       }
