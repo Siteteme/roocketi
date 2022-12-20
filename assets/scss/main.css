@@ -1,3 +1,4 @@
+/*fonts*/
 @font-face {
   font-family: yekanBakh4;
   font-weight: 400;
@@ -23,6 +24,8 @@
   font-weight: 900;
   src: url("/assets/fonts/yekan-bakh/Yekan-Bakh-FaNum-08-Fat.woff") format("woff");
 }
+/*var*/
+/*base*/
 * {
   margin: 0;
   padding: 0;
@@ -153,8 +156,7 @@ header .navbar-sidebar .close-navbar img {
   max-width: 100%;
   position: absolute;
   top: 8px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   left: -300px;
 }
 header .navbar-sidebar .logo img {
@@ -266,12 +268,6 @@ header .navbar-sidebar nav ul li a {
   height: 100%;
   font-family: "yekanBakh4";
 }
-.header .searchbox input::-moz-placeholder {
-  font-size: 12px;
-}
-.header .searchbox input:-ms-input-placeholder {
-  font-size: 12px;
-}
 .header .searchbox input::placeholder {
   font-size: 12px;
 }
@@ -341,6 +337,7 @@ header .navbar-sidebar nav ul li a {
   margin-left: 5px;
 }
 
+/*intro*/
 #intro {
   display: flex;
   margin: 0 43px;
@@ -421,6 +418,7 @@ header .navbar-sidebar nav ul li a {
   float: left;
 }
 
+/*latest-courses*/
 #latest-courses {
   display: flex;
   margin: 80px 45px;
@@ -471,7 +469,7 @@ header .navbar-sidebar nav ul li a {
   flex-direction: column;
   align-items: start;
 }
-#latest-courses .latest-courses-items .latest-courses-item:hover > img {
+#latest-courses .latest-courses-items .latest-courses-item:hover > a > img {
   transform: translateY(-3px);
 }
 #latest-courses .latest-courses-items .latest-courses-item img {
@@ -481,8 +479,7 @@ header .navbar-sidebar nav ul li a {
   align-self: center;
   margin-bottom: 10px;
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: all 0.2s ease;
 }
 #latest-courses .latest-courses-items .latest-courses-item span {
@@ -523,21 +520,86 @@ header .navbar-sidebar nav ul li a {
   border: none;
   margin: 9px 0;
 }
-#latest-courses .latest-courses-items .latest-courses-item div {
+#latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-access {
   display: flex;
   width: 100%;
   align-items: center;
 }
-#latest-courses .latest-courses-items .latest-courses-item div img {
+#latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-access img {
   width: 25px;
   margin: 0;
 }
-#latest-courses .latest-courses-items .latest-courses-item div a {
+#latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-access a {
   text-decoration: none;
   color: #4e5968;
   font-size: 13px;
   font-family: "yekanBakh7";
   margin: 0 5px;
+}
+#latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-time-like-price {
+  margin: 10px 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-time-like-price .latest-courses-item-time-like {
+  display: flex;
+  align-items: center;
+}
+#latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-time-like-price .latest-courses-item-time-like .latest-courses-item-time {
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
+  padding: 3px 6px;
+  border-radius: 5px;
+  background: #FBE9E9;
+}
+#latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-time-like-price .latest-courses-item-time-like .latest-courses-item-time svg {
+  width: 12px;
+  margin: 0 5px;
+}
+#latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-time-like-price .latest-courses-item-time-like .latest-courses-item-time span {
+  color: #ED5074;
+  font-family: "yekanBakh7";
+  position: unset;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  margin-top: 2px;
+}
+#latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-time-like-price .latest-courses-item-time-like .latest-courses-item-like {
+  display: flex;
+  align-items: center;
+  background: #E3E6EC;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+#latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-time-like-price .latest-courses-item-time-like .latest-courses-item-like svg {
+  width: 12px;
+  margin: 0 5px;
+}
+#latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-time-like-price .latest-courses-item-time-like .latest-courses-item-like span {
+  color: #7485A3;
+  font-family: "yekanBakh7";
+  position: unset;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+#latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-time-like-price .latest-courses-item-price {
+  display: flex;
+  align-items: center;
+}
+#latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-time-like-price .latest-courses-item-price svg {
+  width: 20px;
+  margin: 0 6px;
+}
+#latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-time-like-price .latest-courses-item-price span {
+  color: #334155;
+  font-family: "yekanBakh8";
+  position: unset;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-size: 30px;
 }
 #latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-more {
   display: flex;
@@ -554,9 +616,12 @@ header .navbar-sidebar nav ul li a {
 #latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-more a {
   text-decoration: none;
   color: #3B82F6;
-  font-family: "yekanBakh5";
+  font-family: "yekanBakh7";
   transition: all 0.2s ease;
+  font-size: 16px;
 }
 #latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-more a:hover {
   color: #334155 !important;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

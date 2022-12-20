@@ -20,7 +20,9 @@
 
         justify-items: center;
     }
-
+    .intro .intro-right .arrow-down{
+        align-self: center;
+    }
 
 }
 
@@ -95,6 +97,13 @@
         font-size: 20px;
         text-align: center;
     }
+
+    #latest-courses .latest-courses-items {
+        grid-template-columns: auto auto;
+        grid-row-gap: 66px;
+        grid-template-rows: auto auto;
+
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -128,9 +137,24 @@
 
 
 
+@media screen and (max-width: 680px) {
+    #latest-courses .latest-courses-items{
+        grid-template-columns: auto;
+    }
+
+    #latest-courses .latest-courses .latest-courses-title .latest-courses-title-bold h2{
+        font-size: 20px;
+    }
+    #latest-courses .latest-courses .latest-courses-title .latest-courses-title-more a{
+        font-size: 14px;
+    }
+  }
 
 @media screen and (max-width: 580px) {
 
     .intro .intro-right .intro-right-items .intro-right-item h2 {
         font-size: 13px;
     }
+
+
+}

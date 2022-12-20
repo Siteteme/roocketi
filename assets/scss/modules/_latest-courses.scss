@@ -1,3 +1,5 @@
+/*latest-courses*/
+
 #latest-courses {
   display: flex;
   margin: 80px 45px;
@@ -54,8 +56,11 @@
       flex-direction: column;
       align-items: start;
 
-      &:hover > img {
+
+      &:hover > a > img {
         transform: translateY(-3px);
+
+
       }
 
       img {
@@ -112,7 +117,7 @@
         margin: 9px 0;
       }
 
-      div {
+      .latest-courses-item-access {
         display: flex;
         width: 100%;
         align-items: center;
@@ -128,6 +133,82 @@
           font-size: 13px;
           font-family: "yekanBakh7";
           margin: 0 5px;
+        }
+      }
+
+      .latest-courses-item-time-like-price {
+        margin: 10px 0;
+        display: flex;
+        //background: darkcyan;
+        width: 100%;
+        justify-content: space-between;
+
+        .latest-courses-item-time-like {
+          display: flex;
+          align-items: center;
+
+          .latest-courses-item-time {
+            display: flex;
+            align-items: center;
+            margin: 0 8px;
+            padding: 3px 6px;
+            border-radius: 5px;
+            background: #FBE9E9;
+            svg {
+              width: 12px;
+              margin: 0 5px;
+            }
+
+            span {
+              color: #ED5074;
+              font-family: "yekanBakh7";
+              position: unset;
+              margin-right: 0;
+              margin-bottom: 0;
+              font-size: 12px;
+              margin-top: 2px;
+
+            }
+          }
+
+          .latest-courses-item-like {
+            display: flex;
+            align-items: center;
+            background: #E3E6EC;
+            padding: 3px 8px;
+            border-radius: 5px;
+            svg {
+              width: 12px;
+              margin: 0 5px;
+            }
+
+            span {
+              color: #7485A3;
+              font-family: "yekanBakh7";
+              position: unset;
+              margin-right: 0;
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        .latest-courses-item-price {
+          display: flex;
+          align-items: center;
+
+          svg {
+            width: 20px;
+            margin: 0 6px;
+          }
+
+          span {
+            color: $title;
+            font-family: "yekanBakh8";
+            position: unset;
+            margin-right: 0;
+            margin-bottom: 0;
+            font-size: 30px;
+          }
         }
       }
 
@@ -147,9 +228,9 @@
         a {
           text-decoration: none;
           color: $bluePrimary;
-          font-family: "yekanBakh5";
+          font-family: "yekanBakh7";
           transition: $transition;
-
+          font-size: 16px;
           &:hover {
             color: $title !important;
           }
