@@ -16,11 +16,11 @@
         display: grid;
         grid-template-columns: auto auto;
         gap: 20px;
-        width: 78%;
-
-        justify-items: center;
+        width: 100%;
+        justify-content: center;
     }
-    .intro .intro-right .arrow-down{
+
+    .intro .intro-right .arrow-down {
         align-self: center;
     }
 
@@ -50,6 +50,8 @@
     #latest-courses .latest-courses-items .latest-courses-item h3 {
         height: 52px;
     }
+
+
 }
 
 
@@ -136,19 +138,23 @@
 }
 
 
-
 @media screen and (max-width: 680px) {
-    #latest-courses .latest-courses-items{
+    #latest-courses .latest-courses-items {
         grid-template-columns: auto;
     }
 
-    #latest-courses .latest-courses .latest-courses-title .latest-courses-title-bold h2{
-        font-size: 20px;
+    #latest-courses .latest-courses .latest-courses-title .latest-courses-title-bold h2 {
+        font-size: 16px;
     }
-    #latest-courses .latest-courses .latest-courses-title .latest-courses-title-more a{
-        font-size: 14px;
+
+    #latest-courses .latest-courses .latest-courses-title .latest-courses-title-more a {
+        font-size: 12px;
     }
-  }
+
+    .intro .intro-left {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 580px) {
 
@@ -156,5 +162,38 @@
         font-size: 13px;
     }
 
+    .header .logo img {
+        max-width: 50px;
 
+    }
+
+    #learning-paths .learning-paths .learning-paths-title .learning-paths-title-bold h2 {
+        font-size: 25px;
+        color: #334155;
+        margin-right: 8px;
+        font-family: "yekanBakh9";
+        transition: all 0.2s ease;
+    }
+
+    #learning-paths .learning-paths .learning-paths-title .learning-paths-title-more a {
+        font-size: 17px;
+        color: #7A8A9F;
+        font-family: "yekanBakh4";
+        margin: 0 8px;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+}
+
+
+@media screen and (max-width: 465px) {
+    #learning-paths .learning-paths .learning-paths-title .learning-paths-title-bold h2 {
+        font-size: 18px;
+    }
+
+    #learning-paths .learning-paths .learning-paths-title .learning-paths-title-more a {
+        font-size: 15px;
+
+    }
 }

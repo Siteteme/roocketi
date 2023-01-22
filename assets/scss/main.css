@@ -98,7 +98,7 @@ header .navbar ul .sub-nav-items {
 }
 header .navbar ul .sub-nav-items .sub-nav-item {
   display: flex;
-  padding: 8px;
+  padding: 11px 8px;
   border-radius: 8px;
 }
 header .navbar ul .sub-nav-items .sub-nav-item:hover {
@@ -147,6 +147,7 @@ header .navbar-sidebar {
   flex-direction: column;
   align-items: flex-start;
   transition: all 0.2s ease;
+  overflow: auto;
 }
 header .navbar-sidebar .close-navbar {
   position: relative;
@@ -210,7 +211,7 @@ header .navbar-sidebar nav ul li {
   background: #ECEEEF;
   padding: 10px 18px;
   border-radius: 8px;
-  width: 230px;
+  width: 100%;
 }
 header .navbar-sidebar nav ul li:hover {
   background: #EBF2FE;
@@ -396,6 +397,7 @@ header .navbar-sidebar nav ul li a {
 }
 .intro .intro-right .intro-right-items .intro-right-item {
   display: flex;
+  width: 100%;
 }
 .intro .intro-right .intro-right-items .intro-right-item img {
   margin-left: 15px;
@@ -622,6 +624,182 @@ header .navbar-sidebar nav ul li a {
 }
 #latest-courses .latest-courses-items .latest-courses-item .latest-courses-item-more a:hover {
   color: #334155 !important;
+}
+
+/*-learning-paths*/
+#learning-paths {
+  display: flex;
+  margin: 80px 45px;
+}
+#learning-paths .learning-paths {
+  display: flex;
+  flex-direction: column;
+}
+#learning-paths .learning-paths .learning-paths-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+#learning-paths .learning-paths .learning-paths-title .learning-paths-title-bold {
+  display: flex;
+  align-items: center;
+}
+#learning-paths .learning-paths .learning-paths-title .learning-paths-title-bold h2 {
+  font-size: 40px;
+  color: #334155;
+  margin-right: 8px;
+  font-family: "yekanBakh9";
+  transition: all 0.2s ease;
+}
+#learning-paths .learning-paths .learning-paths-title .learning-paths-title-more {
+  display: flex;
+  align-items: center;
+}
+#learning-paths .learning-paths .learning-paths-title .learning-paths-title-more a {
+  font-size: 22px;
+  color: #7A8A9F;
+  font-family: "yekanBakh4";
+  margin: 0 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.learning-paths .learning-paths-items {
+  display: grid;
+}
+.learning-paths .learning-paths-items .learning-paths-item {
+  border: 1px solid rgba(122, 138, 159, 0.1411764706);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.learning-paths .learning-paths-items .learning-paths-item:hover {
+  background: #ffffff;
+  box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.02);
+}
+.learning-paths .learning-paths-items .learning-paths-item .learning-paths-item-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  padding: 25px;
+}
+.learning-paths .learning-paths-items .learning-paths-item .learning-paths-item-head .img-red {
+  width: 62%;
+}
+.learning-paths .learning-paths-items .learning-paths-item .learning-paths-item-head .learning-paths-item-head-img {
+  height: 50px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.learning-paths .learning-paths-items .learning-paths-item .learning-paths-item-head .learning-paths-item-head-img.red {
+  background: red;
+  box-sizing: border-box;
+  box-shadow: -6px 4px 15px 0 rgba(255, 0, 0, 0.2);
+}
+.learning-paths .learning-paths-items .learning-paths-item .learning-paths-item-head .learning-paths-item-head-img.green {
+  background: #16a34a;
+  box-sizing: border-box;
+  box-shadow: -6px 4px 15px 0 rgba(22, 163, 74, 0.1882352941);
+}
+.learning-paths .learning-paths-items .learning-paths-item .learning-paths-item-head .learning-paths-item-head-img.yellow {
+  background: #facc15;
+  box-sizing: border-box;
+  box-shadow: -6px 4px 15px 0 rgba(250, 204, 21, 0.2392156863);
+}
+.learning-paths .learning-paths-items .learning-paths-item .learning-paths-item-head .learning-paths-item-head-img.blue {
+  background: #ff9b35;
+  box-sizing: border-box;
+  box-shadow: -6px 4px 15px 0 rgba(255, 155, 53, 0.5294117647);
+}
+.learning-paths .learning-paths-items .learning-paths-item .learning-paths-item-head .learning-paths-item-head-courses {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #4e5968;
+  border-radius: 5px;
+  padding: 5px 6px;
+}
+.learning-paths .learning-paths-items .learning-paths-item .learning-paths-item-head .learning-paths-item-head-courses img {
+  margin: 0 5px;
+}
+.learning-paths .learning-paths-items .learning-paths-item .learning-paths-item-head .learning-paths-item-head-courses span {
+  font-size: 13px;
+}
+.learning-paths .learning-paths-items .learning-paths-item a {
+  text-decoration: none;
+  color: #4e5968;
+  padding: 0 25px;
+}
+.learning-paths .learning-paths-items .learning-paths-item a h3 {
+  display: inline;
+  font-size: 25px;
+  font-family: "yekanBakh9";
+}
+.learning-paths .learning-paths-items .learning-paths-item a:hover {
+  color: #3B82F6;
+}
+.learning-paths .learning-paths-items .learning-paths-item p {
+  font-size: 16px;
+  font-family: "yekanBakh4";
+  color: #6b788c;
+  margin: 8px 0;
+  padding: 0 25px;
+}
+.learning-paths .learning-paths-items hr {
+  background: rgba(18, 9, 9, 0.0117647059);
+  height: 3px;
+  border: none;
+  margin: 15px 0;
+}
+.learning-paths .learning-paths-items button {
+  display: flex;
+  margin: 15px auto;
+  border: none;
+  color: #3B82F6;
+  background: transparent;
+  font-family: "yekanBakh9";
+  float: left;
+  padding: 0 25px;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 40%;
 }
 
 /*# sourceMappingURL=main.css.map */

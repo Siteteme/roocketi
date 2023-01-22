@@ -49,3 +49,32 @@ function closeSubMenuSidebar() {
     item.style.right = "-400px";
   });
 }
+
+
+
+//slider-product
+
+
+var swiper = new Swiper(".mySwiper", {
+  loop:true,
+  slidesPerView: "3",
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints:{
+    400: {
+      slidesPerView: 1,
+      spaceBetween: 5,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    }},
+});
+
