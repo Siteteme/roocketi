@@ -52,11 +52,11 @@ function closeSubMenuSidebar() {
 
 
 
-//slider-product
+//carousel-learning-paths
 
 
 var swiper = new Swiper(".mySwiper", {
-  loop:true,
+  // loop:true,
   slidesPerView: "3",
   spaceBetween: 20,
   pagination: {
@@ -73,7 +73,7 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 20,
     },
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 3.2,
       spaceBetween: 20,
     }},
 });
